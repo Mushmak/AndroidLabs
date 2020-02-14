@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+
+    >
+
+    <TableRow
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/billTxt"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="@string/bill0"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textAlignment="center">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/iniBill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="0.00"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_span="3">
+
+        </EditText>
+
+
+    </TableRow>
+
+
+    <TableRow
+        android:id ="@+id/fixedPercent"
+        android:layout_width = "match_parent"
+        android:layout_height= "match_parent"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+
+
+        <TextView
+           android:id="@+id/tenPer"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/tenPer"
+            android:textAlignment="center"
+            android:layout_column="2">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/fifteenPer"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/fifteenPer"
+            android:textAlignment="center"
+            android:layout_column="3">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/TwentyPer"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/twentyPer"
+            android:textAlignment="center"
+            android:layout_column="4">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+       android:id="@+id/displayTip"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_column="1"
+            android:text="@string/tip"
+            android:gravity="right"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tip10"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="0.00"
+            android:textAlignment="center"
+            android:layout_column="2"
+
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tip15"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="0.00"
+            android:textAlignment="center"
+            android:layout_column="3"
+
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tip20"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="0.00"
+            android:textAlignment="center"
+            android:layout_column="4"
+
+            >
+        </TextView>
+
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/Totals"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/totaltxt"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/total"
+            android:gravity="right"
+            android:layout_column="1"
+
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/totalTen"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="0.00"
+            android:textAlignment="center"
+            android:layout_column="2"
+
+            >
+        </TextView>
+
+       <TextView
+        android:id="@+id/totalfif"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="0.00"
+        android:textAlignment="center"
+        android:layout_column="3" >
+
+
+      </TextView>
+
+        <TextView
+            android:id="@+id/totalTwenty"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="0.00"
+            android:textAlignment="center"
+            android:layout_column="4" >
+
+
+        </TextView>
+
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/rowCustom"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/displayCustom"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/custom"
+            android:gravity="right"
+            android:layout_column="1"
+
+            >
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/slider"
+            android:layout_height="match_parent"
+            android:layout_span="2"
+            android:max="100"
+
+            android:progress="18">
+
+
+        </SeekBar>
+
+        <TextView
+            android:id="@+id/displayProgress"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="18%"
+            android:textAlignment="center"
+            android:layout_column="4"
+
+
+            >
+
+        </TextView>
+
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/rowCtotal"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/displayCustomTxt"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/tip"
+            android:gravity="right"
+            android:layout_column="1"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/displayCustomTip"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="0.00"
+            android:textAlignment="center"
+            android:layout_column="2"
+            >
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/displayCustomTT"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/total"
+            android:textAlignment="center"
+            android:layout_column="3"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/displayCustomTotal"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="0.00"
+            android:textAlignment="center"
+            android:layout_column="4"
+            >
+
+        </TextView>
+
+
+    </TableRow>
+
+
+
+
+</TableLayout>

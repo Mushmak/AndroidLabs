@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/crust"
+        android:layout_width="111dp"
+        android:layout_height="35dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Crust"
+        android:textColor="#F8050505"
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <TextView
+        android:id="@+id/topping"
+        android:layout_width="91dp"
+        android:layout_height="36dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Toppings"
+        android:textColor="#F8050505"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <TextView
+        android:id="@+id/method"
+        android:layout_width="175dp"
+        android:layout_height="33dp"
+        android:fontFamily="sans-serif-black"
+        android:text="To Go or Delivery "
+        android:textColor="#F8050505"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.464" />
+
+    <RadioGroup
+        android:id="@+id/crustType"
+        android:layout_width="115dp"
+        android:layout_height="127dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261">
+
+        <RadioButton
+            android:id="@+id/Crispy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Crispy" />
+
+        <RadioButton
+            android:id="@+id/Thicky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thick" />
+
+        <RadioButton
+            android:id="@+id/soggy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soggy" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/toGO"
+        android:layout_width="100dp"
+        android:layout_height="107dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615">
+
+        <RadioButton
+            android:id="@+id/Dinein"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:checked="true"
+            android:text="Dine in " />
+
+        <RadioButton
+            android:id="@+id/Pickup"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Pickup" />
+
+        <RadioButton
+            android:id="@+id/Delivery"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Delivery " />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtsize"
+        android:layout_width="49dp"
+        android:layout_height="27dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Size"
+        android:textColor="#F8050505"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.764" />
+
+    <TextView
+        android:id="@+id/Progress"
+        android:layout_width="56dp"
+        android:layout_height="20dp"
+        android:text="29in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.811" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="200dp"
+        android:layout_height="22dp"
+        android:max="100"
+        android:progress="29"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.811" />
+
+    <CheckBox
+        android:id="@+id/Anch"
+        android:layout_width="123dp"
+        android:layout_height="35dp"
+        android:text="Anchovies"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229" />
+
+    <CheckBox
+        android:id="@+id/Pineapple"
+        android:layout_width="123dp"
+        android:layout_height="35dp"
+        android:checked="false"
+        android:text="Pineapple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Anch"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/Okra"
+        android:layout_width="123dp"
+        android:layout_height="35dp"
+        android:text="Okra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pineapple"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/Garlic"
+        android:layout_width="123dp"
+        android:layout_height="35dp"
+        android:text="Garlic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Okra"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="96dp"
+        android:layout_height="42dp"
+        android:text="$33.03"
+        android:textColor="#F7131212"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.907" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

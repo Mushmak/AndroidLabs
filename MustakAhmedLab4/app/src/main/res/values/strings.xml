@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mustak Ahmed Lab4</string>
+    <string name="userName">Username</string>
+    <string name="password">Password</string>
+    <string name="title">Login</string>
+    <string name="FailedLogin">Login Fail Please go back, Try it again!</string>
+    <string name="back">Back</string>
+</resources>
