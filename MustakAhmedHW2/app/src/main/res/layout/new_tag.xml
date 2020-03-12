@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <Button
+        android:id="@+id/newTagBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:width="150dp"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/newDltBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:width="50dp"
+        android:onClick="onClick" />
+
+
+
+
+    <Button
+        android:id="@+id/newEditBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="50dp"
+        android:onClick="onClick"
+        android:text="Edit" />
+
+</TableRow>
